@@ -10,6 +10,7 @@ import SwiftUI
 struct CoinRowView: View {
     
     let coin: CoinModel
+    let showHoldingColumn: Bool
     
     var body: some View {
         HStack(spacing: 0) {
@@ -24,6 +25,14 @@ struct CoinRowView: View {
                 .padding(.leading, 6)
                 .foregroundColor(Color.theme.accent)
             Spacer()
+            if showHoldingColumn {
+                VStack(alignment: .trailing) {
+                    Text(coin.currentHoldingsValue.asCurrencyWith6Decimals())
+                        .bold()
+                    Text((coin.currentHoldings ?? 0).asNumberString())
+                }
+                .foregroundColor(Color.theme.accent)
+            }
             VStack(alignment: .trailing) {
                 Text(coin.currentPrice.asCurrencyWith6Decimals())
                     .bold()
@@ -35,12 +44,13 @@ struct CoinRowView: View {
                             Color.theme.red
                     )
             }
+            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
         }
     }
 }
 
 struct CoinRowView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinRowView(coin: dev.coin)
+        CoinRowView(coin: dev.coin, showHoldingColumn: true)
     }
 }

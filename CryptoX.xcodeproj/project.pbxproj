@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6507AD267DB74F00360DB9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507AC267DB74F00360DB9 /* Color.swift */; };
 		0E9040C8267CED5A00C045D0 /* CryptoXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */; };
 		0E9040CA267CED5A00C045D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9040C9267CED5A00C045D0 /* ContentView.swift */; };
 		0E9040CC267CED5B00C045D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040CB267CED5B00C045D0 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E6507AC267DB74F00360DB9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0E9040C4267CED5A00C045D0 /* CryptoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoXApp.swift; sourceTree = "<group>"; };
 		0E9040C9267CED5A00C045D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6507AB267DB72300360DB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E6507AC267DB74F00360DB9 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0E9040BB267CED5900C045D0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */,
+				0E6507AB267DB72300360DB9 /* Extensions */,
 				0E9040C9267CED5A00C045D0 /* ContentView.swift */,
 				0E9040CB267CED5B00C045D0 /* Assets.xcassets */,
 				0E9040D0267CED5B00C045D0 /* Info.plist */,
@@ -144,6 +155,7 @@
 			files = (
 				0E9040CA267CED5A00C045D0 /* ContentView.swift in Sources */,
 				0E9040C8267CED5A00C045D0 /* CryptoXApp.swift in Sources */,
+				0E6507AD267DB74F00360DB9 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,10 +25,10 @@ struct CoinRowView: View {
                 .foregroundColor(Color.theme.accent)
             Spacer()
             VStack(alignment: .trailing) {
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.asCurrencyWith6Decimals())
                     .bold()
                     .foregroundColor(Color.theme.accent)
-                Text("\(coin.priceChangePercentage24H ?? 0)% ")
+                Text(coin.priceChangePercentage24H?.asPercentString() ?? "")
                     .foregroundColor(
                         (coin.priceChangePercentage24H ?? 0) >= 0 ?
                         Color.theme.green :

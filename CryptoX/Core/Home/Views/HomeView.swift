@@ -22,12 +22,16 @@ struct HomeView: View {
             VStack {
                 homeHeader
                 
-                List {
-                    ForEach(vm.allCoins) { coin in
-                        CoinRowView(coin: coin, showHoldingColumn: false)
+                if !showPortfolio {
+                    List {
+                        ForEach(vm.allCoins) { coin in
+                            CoinRowView(coin: coin, showHoldingColumn: false)
+                        }
                     }
+                    .listStyle(PlainListStyle())
+                    .transition(.move(edge: .leading))
                 }
-                .listStyle(PlainListStyle())
+               
                 Spacer(minLength: 0)
             }
         }

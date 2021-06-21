@@ -21,6 +21,7 @@
 		0E9040CC267CED5B00C045D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040CB267CED5B00C045D0 /* Assets.xcassets */; };
 		0E9040CF267CED5B00C045D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040CE267CED5B00C045D0 /* Preview Assets.xcassets */; };
 		0E9040D8267CF7F300C045D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040D7267CF7F300C045D0 /* README.md */; };
+		0EC801972680A114000A2988 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC801962680A114000A2988 /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0E9040CE267CED5B00C045D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E9040D0267CED5B00C045D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E9040D7267CF7F300C045D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0EC801962680A114000A2988 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */,
+				0EC801952680A0B9000A2988 /* Services */,
 				0E820308267DF72700CA2BF8 /* Models */,
 				0E6507B0267DD25400360DB9 /* Core */,
 				0E6507AB267DB72300360DB9 /* Extensions */,
@@ -161,6 +164,14 @@
 				0E9040CE267CED5B00C045D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EC801952680A0B9000A2988 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EC801962680A114000A2988 /* CoinDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC801972680A114000A2988 /* CoinDataService.swift in Sources */,
 				0E82030D267E032500CA2BF8 /* CoinRowView.swift in Sources */,
 				0E814E1C267F808800B61D9C /* HomeViewModel.swift in Sources */,
 				0E9040CA267CED5A00C045D0 /* ContentView.swift in Sources */,

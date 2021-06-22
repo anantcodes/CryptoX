@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E54FB0226821FD000D50FD4 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E54FB0126821FD000D50FD4 /* UIApplication.swift */; };
 		0E6507AD267DB74F00360DB9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507AC267DB74F00360DB9 /* Color.swift */; };
 		0E6507B5267DD2F300360DB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507B4267DD2F300360DB9 /* HomeView.swift */; };
 		0E6507BA267DD4E800360DB9 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507B9267DD4E800360DB9 /* CircleButtonView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E54FB0126821FD000D50FD4 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		0E6507AC267DB74F00360DB9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0E6507B4267DD2F300360DB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E6507B9267DD4E800360DB9 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				0E6507AC267DB74F00360DB9 /* Color.swift */,
 				0E82030F267E03CB00CA2BF8 /* PreviewProvider.swift */,
 				0E820312267E08F700CA2BF8 /* Double.swift */,
+				0E54FB0126821FD000D50FD4 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				0E6507B5267DD2F300360DB9 /* HomeView.swift in Sources */,
 				0E8253CA2681C34A000C4073 /* CoinImageView.swift in Sources */,
 				0E9040C8267CED5A00C045D0 /* CryptoXApp.swift in Sources */,
+				0E54FB0226821FD000D50FD4 /* UIApplication.swift in Sources */,
 				0E6507BA267DD4E800360DB9 /* CircleButtonView.swift in Sources */,
 				0E6507AD267DB74F00360DB9 /* Color.swift in Sources */,
 				0E8253D72681EB03000C4073 /* SearchBarView.swift in Sources */,

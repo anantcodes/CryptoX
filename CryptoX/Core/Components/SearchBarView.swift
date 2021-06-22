@@ -27,6 +27,9 @@ struct SearchBarView: View {
                         .offset(x: 10)
                         .foregroundColor(Color.theme.accent)
                         .opacity(searchText.isEmpty ? 0.0 : 1.0)
+                        .onTapGesture {
+                            searchText = ""
+                        }
                     ,alignment: .trailing
                 )
         }

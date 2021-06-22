@@ -15,7 +15,9 @@ struct SearchBarView: View {
     var body: some View {
         HStack {
             Image(systemName: "magnifyingglass")
-                .foregroundColor(Color.theme.SecondaryText)
+                .foregroundColor(
+                    searchText.isEmpty ? Color.theme.SecondaryText : Color.theme.accent
+                )
             
             TextField("Search by name or symbol...", text: $searchText)
                 .foregroundColor(Color.theme.accent)

@@ -10,7 +10,7 @@ import SwiftUI
 class CoinImageViewModel: ObservableObject {
     
     @Published var image: UIImage? = nil
-    @Published var isLoading: Bool = true
+    @Published var isLoading: Bool = false
     
     init() {
         getImage()

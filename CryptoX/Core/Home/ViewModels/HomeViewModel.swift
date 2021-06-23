@@ -27,23 +27,24 @@ class HomeViewModel: ObservableObject {
         // updates allcoins
         $searchText
             .combineLatest(dataService.$allCoins)
-            .map { (text, startingCoins) -> [CoinModel] in
-                
-                guard !text.isEmpty else {
-                    return startingCoins
-                }
-                
-                let lowercasedText = text.lowercased()
-                
-                return startingCoins.filter { (coin) -> Bool in
-                    return coin.name.lowercased().contains(lowercasedText) ||
-                        coin.symbol.lowercased().contains(lowercasedText) ||
-                        coin.id.lowercased().contains(lowercasedText)
-                }
-            }
+            .map(filterCoins)
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
             }
             .store(in: &cancellables)
+    }
+    
+    private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
+        guard !text.isEmpty else {
+            return coins
+        }
+        
+        let lowercasedText = text.lowercased()
+        
+        return coins.filter { (coin) -> Bool in
+            return coin.name.lowercased().contains(lowercasedText) ||
+                coin.symbol.lowercased().contains(lowercasedText) ||
+                coin.id.lowercased().contains(lowercasedText)
+        }
     }
 }

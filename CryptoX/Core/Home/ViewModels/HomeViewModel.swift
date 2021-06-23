@@ -23,12 +23,8 @@ class HomeViewModel: ObservableObject {
     }
     
     func addSubscribers() {
-        dataService.$allCoins
-            .sink { [weak self] (returnedCoins) in
-                self?.allCoins = returnedCoins
-            }
-            .store(in: &cancellables)
         
+        // updates allcoins
         $searchText
             .combineLatest(dataService.$allCoins)
             .map { (text, startingCoins) -> [CoinModel] in

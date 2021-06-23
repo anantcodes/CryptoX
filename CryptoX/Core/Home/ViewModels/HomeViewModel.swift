@@ -45,5 +45,9 @@ class HomeViewModel: ObservableObject {
                         coin.id.lowercased().contains(lowercasedText)
                 }
             }
+            .sink { [weak self] (returnedCoins) in
+                self?.allCoins = returnedCoins
+            }
+            .store(in: &cancellables)
     }
 }

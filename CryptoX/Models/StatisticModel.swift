@@ -19,6 +19,3 @@ struct StatisticModel: Identifiable {
         self.percentageChange = percentageChange
     }
 }
-
-
-let newModel = StatisticModel(title: "", value: "", percentageChange: nil)

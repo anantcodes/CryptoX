@@ -12,7 +12,11 @@ struct StatisticView: View {
     let stat: StatisticModel
     
     var body: some View {
-        Text(stat.title)
+        VStack(alignment: .leading, spacing: 4) {
+            Text(stat.title)
+            Text(stat.value)
+            Text(stat.percentageChange?.asPercentString() ?? "")
+        }
     }
 }
 

@@ -19,9 +19,12 @@ struct StatisticView: View {
             Text(stat.value)
                 .font(.headline)
                 .foregroundColor(Color.theme.accent)
-            Text(stat.percentageChange?.asPercentString() ?? "")
-                .font(.caption)
-                .bold()
+            HStack {
+                Image(systemName: "triangle.fill")
+                Text(stat.percentageChange?.asPercentString() ?? "")
+                    .font(.caption)
+                    .bold()
+            }
         }
     }
 }

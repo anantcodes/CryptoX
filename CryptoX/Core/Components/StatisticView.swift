@@ -36,6 +36,14 @@ struct StatisticView: View {
 
 struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticView(stat: dev.stat1)
+        Group {
+            StatisticView(stat: dev.stat1)
+                .previewLayout(.sizeThatFits)
+            StatisticView(stat: dev.stat2)
+                .previewLayout(.sizeThatFits)
+            StatisticView(stat: dev.stat3)
+                .previewLayout(.sizeThatFits)
+        }
+       
     }
 }

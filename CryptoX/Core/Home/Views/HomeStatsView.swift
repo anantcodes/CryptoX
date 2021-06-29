@@ -15,6 +15,7 @@ struct HomeStatsView: View {
         StatisticModel(title: "Title", value: "Value"),
         StatisticModel(title: "Title", value: "Value", percentageChange: -7),
     ]
+    @Binding var showPortfolio: Bool
     
     var body: some View {
         HStack {
@@ -23,12 +24,14 @@ struct HomeStatsView: View {
                     .frame(width: UIScreen.main.bounds.width / 3)
             }
         }
-        .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+        .frame(width: UIScreen.main.bounds.width,
+               alignment: showPortfolio ? .trailing : .leading
+        )
     }
 }
 
 struct HomeStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeStatsView()
+        HomeStatsView(showPortfolio: .constant(false))
     }
 }

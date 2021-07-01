@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E259FDA268593DA0022D667 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E259FD9268593DA0022D667 /* StatisticModel.swift */; };
 		0E3D1490268E071300481BDB /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D148F268E071300481BDB /* MarketDataModel.swift */; };
+		0E3D1493268E0F9700481BDB /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D1492268E0F9700481BDB /* MarketDataService.swift */; };
 		0E54FB0226821FD000D50FD4 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E54FB0126821FD000D50FD4 /* UIApplication.swift */; };
 		0E6507AD267DB74F00360DB9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507AC267DB74F00360DB9 /* Color.swift */; };
 		0E6507B5267DD2F300360DB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6507B4267DD2F300360DB9 /* HomeView.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0E259FD9268593DA0022D667 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		0E3D148F268E071300481BDB /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		0E3D1492268E0F9700481BDB /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		0E54FB0126821FD000D50FD4 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		0E6507AC267DB74F00360DB9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0E6507B4267DD2F300360DB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				0EC801962680A114000A2988 /* CoinDataService.swift */,
 				0E8253CD2681C87E000C4073 /* CoinImageService.swift */,
+				0E3D1492268E0F9700481BDB /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				0E8253D72681EB03000C4073 /* SearchBarView.swift in Sources */,
 				0EC8019C2680B343000A2988 /* NetworkingManager.swift in Sources */,
 				0E707441268B5B5300784B24 /* HomeStatsView.swift in Sources */,
+				0E3D1493268E0F9700481BDB /* MarketDataService.swift in Sources */,
 				0E6507BD267DDA7B00360DB9 /* CircleButtonAnimationView.swift in Sources */,
 				0E8253D12681CD84000C4073 /* CoinImageViewModel.swift in Sources */,
 				0E820310267E03CB00CA2BF8 /* PreviewProvider.swift in Sources */,

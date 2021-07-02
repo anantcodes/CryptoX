@@ -194,8 +194,8 @@ struct MarketDataModel: Codable {
     }
     
     var volume: String {
-        if let item = totalMarketCap.first(where: { $0.key == "usd" }) {
-            return "\(item.value)"
+        if let item = totalVolume.first(where: { $0.key == "usd" }) {
+            return "$" + item.value.formattedWithAbbreviations()
         }
         
         return ""

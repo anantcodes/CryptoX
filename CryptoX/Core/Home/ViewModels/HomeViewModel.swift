@@ -22,7 +22,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var searchText: String = ""
     
-    private let dataService = CoinDataService()
+    private let coinDataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -33,7 +33,7 @@ class HomeViewModel: ObservableObject {
         
         // updates allcoins
         $searchText
-            .combineLatest(dataService.$allCoins)
+            .combineLatest(coinDataService.$allCoins)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
             .map(filterCoins)
             .sink { [weak self] (returnedCoins) in

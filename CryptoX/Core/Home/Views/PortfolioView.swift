@@ -31,7 +31,8 @@ struct PortfolioView: View {
                                     }
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.theme.green, lineWidth: 1)
+                                            .stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear
+                                                    , lineWidth: 1)
                                             
                                     )
                             }

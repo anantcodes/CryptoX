@@ -9,8 +9,6 @@ import SwiftUI
 
 struct PortfolioView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -19,7 +17,11 @@ struct PortfolioView: View {
                 }
             }
             .navigationTitle("Edit Portfolio")
-            .navigationBarItems(leading: XMarkButton() )
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    XMarkButton()
+                }
+            })
         }
     }
 }

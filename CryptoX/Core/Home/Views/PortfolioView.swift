@@ -23,7 +23,7 @@ struct PortfolioView: View {
                     if selectedCoin != nil {
                         VStack(spacing: 20) {
                             HStack {
-                                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? "")")
+                                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? ""):")
                             }
                         }
                     }

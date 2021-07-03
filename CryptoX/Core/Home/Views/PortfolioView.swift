@@ -33,6 +33,14 @@ struct PortfolioView: View {
                                 Text("Amount in your portfolio:")
                                 Spacer()
                                 TextField("Ex: 1.4", text: $quantityText)
+                                    .multilineTextAlignment(.trailing)
+                                    .keyboardType(.decimalPad)
+                            }
+                            Divider()
+                            HStack {
+                                Text("Current Value:")
+                                Spacer()
+                                Text(getCurrentValue().asCurrencyWith2Decimals())
                             }
                         }
                     }
@@ -82,4 +90,15 @@ extension PortfolioView {
             .padding(.leading)
         })
     }
+    
+    
+    private func getCurrentValue() -> Double {
+        if let quantity = Double(quantityText) {
+            return quantity * (selectedCoin?.currentPrice ?? 0)
+        }
+        return 0
+    }
+    
+    
+    
 }

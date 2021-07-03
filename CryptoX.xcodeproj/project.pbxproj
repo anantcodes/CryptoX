@@ -36,6 +36,7 @@
 		0EC8019C2680B343000A2988 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8019B2680B343000A2988 /* NetworkingManager.swift */; };
 		0ED4D9172690486800F7794A /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4D9162690486800F7794A /* PortfolioView.swift */; };
 		0ED4D91A26904D6600F7794A /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4D91926904D6600F7794A /* XMarkButton.swift */; };
+		0ED4D91D269059D000F7794A /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4D91C269059D000F7794A /* CoinLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		0EC8019B2680B343000A2988 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		0ED4D9162690486800F7794A /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		0ED4D91926904D6600F7794A /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		0ED4D91C269059D000F7794A /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				0E8253C92681C34A000C4073 /* CoinImageView.swift */,
 				0E8253D02681CD84000C4073 /* CoinImageViewModel.swift */,
+				0ED4D91C269059D000F7794A /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				0E6507AD267DB74F00360DB9 /* Color.swift in Sources */,
 				0E8253D72681EB03000C4073 /* SearchBarView.swift in Sources */,
 				0EC8019C2680B343000A2988 /* NetworkingManager.swift in Sources */,
+				0ED4D91D269059D000F7794A /* CoinLogoView.swift in Sources */,
 				0E707441268B5B5300784B24 /* HomeStatsView.swift in Sources */,
 				0E3D1493268E0F9700481BDB /* MarketDataService.swift in Sources */,
 				0E6507BD267DDA7B00360DB9 /* CircleButtonAnimationView.swift in Sources */,

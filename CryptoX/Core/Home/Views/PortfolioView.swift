@@ -22,30 +22,7 @@ struct PortfolioView: View {
                     coinLogoList
                     
                     if selectedCoin != nil {
-                        VStack(spacing: 20) {
-                            HStack {
-                                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? ""):")
-                                Spacer()
-                                Text(selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
-                            }
-                            Divider()
-                            HStack {
-                                Text("Amount in your portfolio:")
-                                Spacer()
-                                TextField("Ex: 1.4", text: $quantityText)
-                                    .multilineTextAlignment(.trailing)
-                                    .keyboardType(.decimalPad)
-                            }
-                            Divider()
-                            HStack {
-                                Text("Current Value:")
-                                Spacer()
-                                Text(getCurrentValue().asCurrencyWith2Decimals())
-                            }
-                        }
-                        .animation(.none)
-                        .padding()
-                        .font(.headline)
+                        portfolioInputSection
                     }
                 }
             }
@@ -102,6 +79,31 @@ extension PortfolioView {
         return 0
     }
     
-    
+    private var portfolioInputSection: some View {
+        VStack(spacing: 20) {
+            HStack {
+                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? ""):")
+                Spacer()
+                Text(selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
+            }
+            Divider()
+            HStack {
+                Text("Amount in your portfolio:")
+                Spacer()
+                TextField("Ex: 1.4", text: $quantityText)
+                    .multilineTextAlignment(.trailing)
+                    .keyboardType(.decimalPad)
+            }
+            Divider()
+            HStack {
+                Text("Current Value:")
+                Spacer()
+                Text(getCurrentValue().asCurrencyWith2Decimals())
+            }
+        }
+        .animation(.none)
+        .padding()
+        .font(.headline)
+    }
     
 }

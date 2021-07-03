@@ -88,7 +88,7 @@ extension PortfolioView {
             }
             Divider()
             HStack {
-                Text("Amount in your portfolio:")
+                Text("Amount holding:")
                 Spacer()
                 TextField("Ex: 1.4", text: $quantityText)
                     .multilineTextAlignment(.trailing)

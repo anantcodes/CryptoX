@@ -9,11 +9,13 @@ import SwiftUI
 
 struct PortfolioView: View {
     
+    @EnvironmentObject private var vm: HomeViewModel
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Hi")
+                    SearchBarView(searchText: $vm.searchText)
                 }
             }
             .navigationTitle("Edit Portfolio")
@@ -29,5 +31,6 @@ struct PortfolioView: View {
 struct PortfolioView_Previews: PreviewProvider {
     static var previews: some View {
         PortfolioView()
+            .environmentObject(dev.homeVM)
     }
 }

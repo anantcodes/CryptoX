@@ -16,6 +16,14 @@ struct PortfolioView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     SearchBarView(searchText: $vm.searchText)
+                    
+                    ScrollView(.horizontal, showsIndicators: true, content: {
+                        LazyHStack(spacing: 10) {
+                            ForEach(vm.allCoins) { coin in
+                                Text(coin.symbol.uppercased())
+                            }
+                        }
+                    })
                 }
             }
             .navigationTitle("Edit Portfolio")

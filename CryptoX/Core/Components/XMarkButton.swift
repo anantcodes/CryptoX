@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct XMarkButton: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            presentationMode.wrappedValue.dismiss()
+        }, label: {
+            Image(systemName: "xmark")
+                .font(.headline)
+        })
     }
 }
 

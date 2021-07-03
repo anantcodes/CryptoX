@@ -20,7 +20,13 @@ struct PortfolioView: View {
                     
                     coinLogoList
                     
-                    
+                    if selectedCoin != nil {
+                        VStack(spacing: 20) {
+                            HStack {
+                                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? "")")
+                            }
+                        }
+                    }
                 }
             }
             .navigationTitle("Edit Portfolio")

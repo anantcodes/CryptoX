@@ -11,6 +11,7 @@ struct PortfolioView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
     @State private var selectedCoin: CoinModel? = nil
+    @State private var quantityText: String = ""
     
     var body: some View {
         NavigationView {
@@ -26,6 +27,12 @@ struct PortfolioView: View {
                                 Text("Current price of \(selectedCoin?.symbol.uppercased() ?? ""):")
                                 Spacer()
                                 Text(selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
+                            }
+                            Divider()
+                            HStack {
+                                Text("Amount in your portfolio:")
+                                Spacer()
+                                TextField("Ex: 1.4", text: $quantityText)
                             }
                         }
                     }

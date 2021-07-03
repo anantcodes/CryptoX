@@ -10,6 +10,7 @@ import SwiftUI
 struct PortfolioView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
+    @State private var selectedCoin: CoinModel? = nil
     
     var body: some View {
         NavigationView {
@@ -17,12 +18,26 @@ struct PortfolioView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     SearchBarView(searchText: $vm.searchText)
                     
-                    ScrollView(.horizontal, showsIndicators: true, content: {
+                    ScrollView(.horizontal, showsIndicators: false, content: {
                         LazyHStack(spacing: 10) {
                             ForEach(vm.allCoins) { coin in
                                 CoinLogoView(coin: coin)
+                                    .frame(width: 75)
+                                    .padding(4)
+                                    .onTapGesture {
+                                        withAnimation(.easeIn) {
+                                            selectedCoin = coin
+                                        }
+                                    }
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.theme.green, lineWidth: 1)
+                                            
+                                    )
                             }
                         }
+                        .padding(.vertical, 4)
+                        .padding(.leading)
                     })
                 }
             }

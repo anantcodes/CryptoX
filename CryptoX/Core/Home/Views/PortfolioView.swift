@@ -36,6 +36,7 @@ struct PortfolioView: View {
                         Image(systemName: "checkmark")
                         Text("Save".uppercased())
                     }
+                    .font(.headline)
                 }
             })
         }

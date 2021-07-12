@@ -43,6 +43,11 @@ class PortfolioDataService {
         applyChanges()
     }
     
+    private func update(entity: PortfolioEntity,amount: Double) {
+        entity.amount = amount
+        applyChanges()
+    }
+    
     private func save() {
         do {
             try container.viewContext.save()
@@ -55,6 +60,5 @@ class PortfolioDataService {
         save()
         getPortfolio()
     }
-    
     
 }

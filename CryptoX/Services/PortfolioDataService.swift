@@ -40,6 +40,7 @@ class PortfolioDataService {
         let entity = PortfolioEntity(context: container.viewContext)
         entity.coinID = coin.id
         entity.amount = amount
+        applyChanges()
     }
     
     private func save() {
@@ -49,4 +50,11 @@ class PortfolioDataService {
             print("Error saving to Core Data. \(error)")
         }
     }
+    
+    private func applyChanges() {
+        save()
+        getPortfolio()
+    }
+    
+    
 }

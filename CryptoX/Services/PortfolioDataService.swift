@@ -36,4 +36,17 @@ class PortfolioDataService {
         }
     }
     
+    private func add(coin: CoinModel,amount: Double) {
+        let entity = PortfolioEntity(context: container.viewContext)
+        entity.coinID = coin.id
+        entity.amount = amount
+    }
+    
+    private func save() {
+        do {
+            try container.viewContext.save()
+        } catch let error {
+            print("Error saving to Core Data. \(error)")
+        }
+    }
 }

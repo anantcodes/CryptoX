@@ -109,13 +109,23 @@ extension HomeView {
     
     private var columnTitles: some View {
         HStack {
-            Text("Coin")
+            HStack(spacing: 4) {
+                Text("Coin")
+                Image(systemName: "chevron.down")
+            }
+            
             Spacer()
             if showPortfolio {
-                Text("Holdings")
+                HStack(spacing: 4) {
+                    Text("Holdings")
+                    Image(systemName: "chevron.down")
+                }
             }
-            Text("Price")
-                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            HStack(spacing: 4) {
+                Text("Price")
+                Image(systemName: "chevron.down")
+            }
+            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
             Button(action: {
                 withAnimation(.linear(duration: 2.0)) {
                     vm.reloadData()

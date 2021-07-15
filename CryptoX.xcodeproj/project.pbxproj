@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E259FDA268593DA0022D667 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E259FD9268593DA0022D667 /* StatisticModel.swift */; };
+		0E2BDBEE26A02689008A8B2C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BDBED26A02689008A8B2C /* DetailView.swift */; };
 		0E3D1490268E071300481BDB /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D148F268E071300481BDB /* MarketDataModel.swift */; };
 		0E3D1493268E0F9700481BDB /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D1492268E0F9700481BDB /* MarketDataService.swift */; };
 		0E455470269C3F9200E7AA1C /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45546F269C3F9200E7AA1C /* PortfolioDataService.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0E259FD9268593DA0022D667 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		0E2BDBED26A02689008A8B2C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0E3D148F268E071300481BDB /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		0E3D1492268E0F9700481BDB /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		0E45546F269C3F9200E7AA1C /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
@@ -91,6 +93,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2BDBEA26A02619008A8B2C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0E2BDBEC26A02660008A8B2C /* ViewModels */,
+				0E2BDBEB26A02658008A8B2C /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0E2BDBEB26A02658008A8B2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E2BDBED26A02689008A8B2C /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E2BDBEC26A02660008A8B2C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		0E6507AB267DB72300360DB9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +131,7 @@
 		0E6507B0267DD25400360DB9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0E2BDBEA26A02619008A8B2C /* Detail */,
 				0E6507B7267DD4AD00360DB9 /* Components */,
 				0E6507B1267DD2A000360DB9 /* Home */,
 			);
@@ -330,6 +357,7 @@
 				0E54FB0226821FD000D50FD4 /* UIApplication.swift in Sources */,
 				0E6507BA267DD4E800360DB9 /* CircleButtonView.swift in Sources */,
 				0E6507AD267DB74F00360DB9 /* Color.swift in Sources */,
+				0E2BDBEE26A02689008A8B2C /* DetailView.swift in Sources */,
 				0EB38123269F01E500D3C3F6 /* HapticManager.swift in Sources */,
 				0E8253D72681EB03000C4073 /* SearchBarView.swift in Sources */,
 				0EC8019C2680B343000A2988 /* NetworkingManager.swift in Sources */,

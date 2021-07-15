@@ -11,6 +11,11 @@ struct DetailView: View {
     
     let coin: CoinModel
     
+    init(coin: CoinModel) {
+        self.coin = coin
+        print("Initializing Detail View for \(coin.name)")
+    }
+    
     var body: some View {
         Text(coin.name)
     }

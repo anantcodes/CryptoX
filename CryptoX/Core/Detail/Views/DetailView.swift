@@ -33,8 +33,16 @@ struct DetailView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                Text("Hi")
+                Text("")
+                    .frame(height: 150)
+                
+                Text("Overview")
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(Color.theme.accent)
+                    .frame(maxWidth: .infinity,alignment: .leading)
             }
+            .padding()
         }
         .navigationTitle(vm.coin.name)
     }

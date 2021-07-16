@@ -40,37 +40,12 @@ struct DetailView: View {
             VStack(spacing: 20) {
                 Text("")
                     .frame(height: 150)
-                
                 overviewTitle
                 Divider()
-                
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    pinnedViews: [],
-                    content: {
-                        ForEach(vm.overviewStatistics) { stat in
-                            StatisticView(stat: stat)
-                        }
-                })
-                
-                
+                overviewGrid
                 additionalTitle
                 Divider()
-                
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    pinnedViews: [],
-                    content: {
-                        ForEach(vm.additionalStatistics) { stat in
-                            StatisticView(stat: stat)
-                        }
-                })
-                
-                
+                additionalGrid
             }
             .padding()
         }
@@ -103,5 +78,31 @@ extension DetailView {
             .bold()
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity,alignment: .leading)
+    }
+    
+    private var overviewGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            pinnedViews: [],
+            content: {
+                ForEach(vm.overviewStatistics) { stat in
+                    StatisticView(stat: stat)
+                }
+        })
+    }
+    
+    private var additionalGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            pinnedViews: [],
+            content: {
+                ForEach(vm.additionalStatistics) { stat in
+                    StatisticView(stat: stat)
+                }
+        })
     }
 }

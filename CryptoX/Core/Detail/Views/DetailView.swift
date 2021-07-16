@@ -41,11 +41,7 @@ struct DetailView: View {
                 Text("")
                     .frame(height: 150)
                 
-                Text("Overview")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(Color.theme.accent)
-                    .frame(maxWidth: .infinity,alignment: .leading)
+                overviewTitle
                 Divider()
                 
                 LazyVGrid(
@@ -60,11 +56,7 @@ struct DetailView: View {
                 })
                 
                 
-                Text("Additional Details")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(Color.theme.accent)
-                    .frame(maxWidth: .infinity,alignment: .leading)
+                additionalTitle
                 Divider()
                 
                 LazyVGrid(
@@ -91,5 +83,25 @@ struct DetailView_Previews: PreviewProvider {
         NavigationView {
             DetailView(coin: dev.coin)
         }
+    }
+}
+
+
+extension DetailView {
+    
+    private var overviewTitle: some View {
+        Text("Overview")
+            .font(.title)
+            .bold()
+            .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity,alignment: .leading)
+    }
+    
+    private var additionalTitle: some View {
+        Text("Additional Details")
+            .font(.title)
+            .bold()
+            .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity,alignment: .leading)
     }
 }

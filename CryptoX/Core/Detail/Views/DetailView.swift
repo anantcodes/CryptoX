@@ -29,6 +29,7 @@ struct DetailView: View {
         GridItem(.flexible()) ,
         GridItem(.flexible()) ,
     ]
+    private let spacing: CGFloat = 30
     
     init(coin: CoinModel) {
         _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
@@ -50,11 +51,12 @@ struct DetailView: View {
                 LazyVGrid(
                     columns: columns,
                     alignment: .center,
-                    spacing: nil,
+                    spacing: spacing,
                     pinnedViews: [],
                     content: {
-                    Text("Placeholder")
-                    Text("Placeholder")
+                        ForEach(0..<6) { _ in
+                            StatisticView(stat: StatisticModel(title: "Title", value: "Value"))
+                        }
                 })
                 
                 

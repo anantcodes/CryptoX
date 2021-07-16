@@ -50,7 +50,7 @@ struct DetailView: View {
                 
                 LazyVGrid(
                     columns: columns,
-                    alignment: .center,
+                    alignment: .leading,
                     spacing: spacing,
                     pinnedViews: [],
                     content: {

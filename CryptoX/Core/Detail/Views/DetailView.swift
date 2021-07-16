@@ -28,16 +28,22 @@ struct DetailView: View {
     
     init(coin: CoinModel) {
         _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
-        print("Initializing Detail View for \(coin.name)")
     }
     
     var body: some View {
-        Text("Hello")
+        ScrollView {
+            VStack(spacing: 20) {
+                Text("Hi")
+            }
+        }
+        .navigationTitle(vm.coin.name)
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(coin: dev.coin)
+        NavigationView {
+            DetailView(coin: dev.coin)
+        }
     }
 }

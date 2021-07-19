@@ -50,6 +50,13 @@ struct DetailView: View {
             .padding()
         }
         .navigationTitle(vm.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Text(vm.coin.symbol.uppercased())
+                    .font(.headline)
+                    .foregroundColor(Color.theme.SecondaryText)
+            }
+        }
     }
 }
 

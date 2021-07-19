@@ -28,6 +28,15 @@ struct ChartView: View {
         VStack {
            chartView
             .frame(height: 200)
+            .background(
+                VStack {
+                    Divider()
+                    Spacer()
+                    Divider()
+                    Spacer()
+                    Divider()
+                }
+            )
         }
     }
 }

@@ -36,8 +36,10 @@ struct ChartView: View {
             .background(chartBackground)
             .overlay(chartYAxis, alignment: .leading)
                      
-            chartDateLabel
+            chartDateLabels
         }
+        .font(.caption)
+        .foregroundColor(Color.theme.SecondaryText)
     }
 }
 
@@ -92,7 +94,7 @@ extension ChartView {
         }
     }
     
-    private var chartDateLabel: some View {
+    private var chartDateLabels: some View {
         HStack {
             Text(startingDate.asShortDateString())
             Spacer()

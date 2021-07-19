@@ -10,9 +10,13 @@ import SwiftUI
 struct ChartView: View {
     
     let data: [Double]
+    let maxY: Double
+    let minY: Double
     
     init(coin: CoinModel) {
         data = coin.sparklineIn7D?.price ?? []
+        maxY = data.max() ?? 0
+        minY = data.min() ?? 0
     }
     
     
@@ -23,11 +27,15 @@ struct ChartView: View {
                     
                     let xPosition = geometry.size.width / CGFloat(data.count) * CGFloat(index + 1)
                     
+                    let yAxis = maxY - minY
+                    
+                    let yPosition = CGFloat((data[index] - minY) / yAxis) * geometry.size.height
+                    
                     
                     if index == 0 {
                         path.move(to: CGPoint(x: 0, y: 0))
                     }
-                    path.addLine(to: CGPoint(x: xPosition, y: 0))
+                    path.addLine(to: CGPoint(x: xPosition, y: yPosition))
                     
                 }
             }
@@ -39,6 +47,5 @@ struct ChartView: View {
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
         ChartView(coin: dev.coin)
-            .frame(width: 200)
     }
 }

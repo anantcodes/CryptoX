@@ -52,9 +52,11 @@ struct DetailView: View {
         .navigationTitle(vm.coin.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Text(vm.coin.symbol.uppercased())
-                    .font(.headline)
-                    .foregroundColor(Color.theme.SecondaryText)
+                HStack {
+                    Text(vm.coin.symbol.uppercased())
+                        .font(.headline)
+                        .foregroundColor(Color.theme.SecondaryText)
+                }
             }
         }
     }

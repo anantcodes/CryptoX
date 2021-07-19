@@ -36,11 +36,7 @@ struct ChartView: View {
             .background(chartBackground)
             .overlay(chartYAxis, alignment: .leading)
                      
-            HStack {
-                Text(startingDate.asShortDateString())
-                Spacer()
-                Text(endingDate.asShortDateString())
-            }
+            chartDateLabel
         }
     }
 }
@@ -93,6 +89,14 @@ extension ChartView {
             Text(((maxY + minY) / 2).formattedWithAbbreviations())
             Spacer()
             Text(minY.formattedWithAbbreviations())
+        }
+    }
+    
+    private var chartDateLabel: some View {
+        HStack {
+            Text(startingDate.asShortDateString())
+            Spacer()
+            Text(endingDate.asShortDateString())
         }
     }
 }

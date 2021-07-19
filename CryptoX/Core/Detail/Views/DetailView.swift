@@ -56,6 +56,8 @@ struct DetailView: View {
                     Text(vm.coin.symbol.uppercased())
                         .font(.headline)
                         .foregroundColor(Color.theme.SecondaryText)
+                    CoinImageView(coin: vm.coin)
+                        .frame(width: 25, height: 25)
                 }
             }
         }

@@ -27,6 +27,7 @@ struct ChartView: View {
     var body: some View {
         VStack {
            chartView
+            .frame(height: 200)
         }
     }
 }

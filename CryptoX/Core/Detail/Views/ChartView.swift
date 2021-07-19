@@ -28,14 +28,16 @@ struct ChartView: View {
         VStack {
            chartView
             .frame(height: 200)
-            .background(
+            .background(chartBackground)
+            .overlay(
                 VStack {
-                    Divider()
+                    Text(maxY.formattedWithAbbreviations())
                     Spacer()
-                    Divider()
+                    Text(((maxY + minY) / 2).formattedWithAbbreviations())
                     Spacer()
-                    Divider()
+                    Text(minY.formattedWithAbbreviations())
                 }
+                , alignment: .leading
             )
         }
     }
@@ -69,6 +71,16 @@ extension ChartView {
                 }
             }
             .stroke(lineColor , style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+        }
+    }
+    
+    private var chartBackground: some View {
+        VStack {
+            Divider()
+            Spacer()
+            Divider()
+            Spacer()
+            Divider()
         }
     }
 }

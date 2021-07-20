@@ -39,7 +39,7 @@ class DetailViewModel: ObservableObject {
         
         coinDetailService.$coinDetails
             .sink { [weak self] (returnedCoinDetails) in
-                self?.coinDescription = returnedCoinDetails?.description?.en
+                self?.coinDescription = returnedCoinDetails?.readableDescription
                 self?.websiteURL = returnedCoinDetails?.links?.homepage?.first
                 self?.redditURL = returnedCoinDetails?.links?.subredditURL
             }

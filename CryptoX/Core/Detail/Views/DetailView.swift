@@ -45,33 +45,7 @@ struct DetailView: View {
                 VStack(spacing: 20) {
                     overviewTitle
                     Divider()
-                    
-                    ZStack {
-                        if let coinDescription = vm.coinDescription,
-                           !coinDescription.isEmpty {
-                            VStack(alignment: .leading) {
-                                Text(coinDescription)
-                                    .lineLimit(showFullDescription ? nil : 3)
-                                    .font(.callout)
-                                    .foregroundColor(Color.theme.SecondaryText)
-                                
-                                Button(action: {
-                                    withAnimation(.easeInOut) {
-                                        showFullDescription.toggle()
-                                    }
-                                }, label: {
-                                    Text(showFullDescription ? "Less" : "Read more..")
-                                        .font(.caption)
-                                        .fontWeight(.bold)
-                                        .padding(.vertical, 4)
-                                })
-                                .accentColor(.blue)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                    }
-                    
-                    
+                    descriptionSection
                     overviewGrid
                     additionalTitle
                     Divider()
@@ -125,6 +99,33 @@ extension DetailView {
             .bold()
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity,alignment: .leading)
+    }
+    
+    private var descriptionSection: some View {
+        ZStack {
+            if let coinDescription = vm.coinDescription,
+               !coinDescription.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(coinDescription)
+                        .lineLimit(showFullDescription ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.SecondaryText)
+                    
+                    Button(action: {
+                        withAnimation(.easeInOut) {
+                            showFullDescription.toggle()
+                        }
+                    }, label: {
+                        Text(showFullDescription ? "Less" : "Read more..")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    })
+                    .accentColor(.blue)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
     
     private var overviewGrid: some View {

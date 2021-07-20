@@ -51,11 +51,16 @@ struct DetailView: View {
                             VStack(alignment: .leading) {
                                 Text(coinDescription)
                                     .lineLimit(3)
+                                    .font(.callout)
+                                    .foregroundColor(Color.theme.SecondaryText)
                                 
                                 Button(action: {
                                     
                                 }, label: {
                                     Text("Read more..")
+                                        .font(.caption)
+                                        .fontWeight(.bold)
+                                        .padding(.vertical, 4)
                                 })
                                 .accentColor(.blue)
                             }

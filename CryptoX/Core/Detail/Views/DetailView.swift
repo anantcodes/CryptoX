@@ -59,6 +59,9 @@ struct DetailView: View {
                         
                         
                     }
+                    .accentColor(.blue)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.headline)
                 }
                 .padding()
             }

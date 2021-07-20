@@ -60,7 +60,7 @@ struct DetailView: View {
                                         showFullDescription.toggle()
                                     }
                                 }, label: {
-                                    Text("Read more..")
+                                    Text(showFullDescription ? "Less" : "Read more..")
                                         .font(.caption)
                                         .fontWeight(.bold)
                                         .padding(.vertical, 4)

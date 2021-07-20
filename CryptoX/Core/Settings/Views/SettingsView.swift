@@ -19,6 +19,7 @@ struct SettingsView: View {
         NavigationView {
             List {
                 cryptoxSection
+                coinGeckoSection
             }
             .font(.headline)
             .accentColor(.blue)
@@ -55,6 +56,24 @@ extension SettingsView{
             }
             .padding(.vertical)
             Link("GitHub", destination: githubURL)
+        }
+    }
+    
+    private var coinGeckoSection: some View {
+        Section(header: Text("CoinGecko")) {
+            VStack(alignment: .leading) {
+                Image("coingecko")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                Text("The cryptocurrecy data that is used in this app comes from CoinGecko API!")
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.theme.accent)
+            }
+            .padding(.vertical)
+            Link("Visit CoinGecko", destination: coingeckoURL)
         }
     }
 }

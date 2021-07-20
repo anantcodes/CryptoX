@@ -49,6 +49,7 @@ struct DetailView: View {
                         if let coinDescription = vm.coinDescription,
                            !coinDescription.isEmpty {
                             Text(coinDescription)
+                                .lineLimit(3)
                         }
                     }
                     

@@ -50,6 +50,15 @@ struct DetailView: View {
                     additionalTitle
                     Divider()
                     additionalGrid
+                    
+                    ZStack {
+                        if let websiteString = vm.websiteURL,
+                           let url = URL(string: websiteString) {
+                            Link("Website", destination: url)
+                        }
+                        
+                        
+                    }
                 }
                 .padding()
             }

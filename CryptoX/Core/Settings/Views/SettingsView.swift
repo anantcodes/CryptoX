@@ -21,6 +21,7 @@ struct SettingsView: View {
                 cryptoxSection
                 coinGeckoSection
                 developerSection
+                applicationSection
             }
             .font(.headline)
             .accentColor(.blue)
@@ -94,6 +95,15 @@ extension SettingsView{
             .padding(.vertical)
             Link("Visit GitHub", destination: personalURL)
             Link("Visit LinkedIn", destination: linkedinURL)
+        }
+    }
+    
+    private var applicationSection: some View {
+        Section(header: Text("Application")) {
+            Link("Terms of Service", destination: defaultURL)
+            Link("Privacy Policy", destination: defaultURL)
+            Link("Company Website", destination: defaultURL)
+            Link("Learn More", destination: defaultURL)
         }
     }
 }

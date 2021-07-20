@@ -50,23 +50,7 @@ struct DetailView: View {
                     additionalTitle
                     Divider()
                     additionalGrid
-                    
-                    VStack(alignment: .leading, spacing: 20) {
-                        if let websiteString = vm.websiteURL,
-                           let url = URL(string: websiteString) {
-                            Link("Website", destination: url)
-                        }
-                        
-                        if let redditString = vm.redditURL,
-                           let url = URL(string: redditString) {
-                            Link("Reddit", destination: url)
-                        }
-                        
-                        
-                    }
-                    .accentColor(.blue)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.headline)
+                    websiteSection
                 }
                 .padding()
             }
@@ -169,5 +153,24 @@ extension DetailView {
                     StatisticView(stat: stat)
                 }
         })
+    }
+    
+    private var websiteSection: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            if let websiteString = vm.websiteURL,
+               let url = URL(string: websiteString) {
+                Link("Website", destination: url)
+            }
+            
+            if let redditString = vm.redditURL,
+               let url = URL(string: redditString) {
+                Link("Reddit", destination: url)
+            }
+            
+            
+        }
+        .accentColor(.blue)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .font(.headline)
     }
 }

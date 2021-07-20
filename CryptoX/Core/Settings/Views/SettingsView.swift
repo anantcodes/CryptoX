@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     
     let defaultURL = URL(string: "https://www.google.com")!
-    let githubURL = URL(string: "https://github.com/anantcodes")!
+    let githubURL = URL(string: "https://github.com/anantcodes/CryptoX")!
     let linkedinURL = URL(string: "https://www.linkedin.com/in/anantkanchan/")!
     let coingeckoURL = URL(string: "https://www.coingecko.com")!
     let personalURL = URL(string: "https://github.com/anantcodes")!
@@ -20,6 +20,7 @@ struct SettingsView: View {
             List {
                 cryptoxSection
                 coinGeckoSection
+                developerSection
             }
             .font(.headline)
             .accentColor(.blue)
@@ -74,6 +75,25 @@ extension SettingsView{
             }
             .padding(.vertical)
             Link("Visit CoinGecko", destination: coingeckoURL)
+        }
+    }
+    
+    private var developerSection: some View {
+        Section(header: Text("Developer")) {
+            VStack(alignment: .leading) {
+                Image("developer")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                Text("This app was developed by Anant Kanchan. It uses SwiftUI amd is 100% wriiten in Swift. The project benefits from multi-threading, publishers/sebscribers, and data persistance.")
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.theme.accent)
+            }
+            .padding(.vertical)
+            Link("Visit GitHub", destination: personalURL)
+            Link("Visit LinkedIn", destination: linkedinURL)
         }
     }
 }

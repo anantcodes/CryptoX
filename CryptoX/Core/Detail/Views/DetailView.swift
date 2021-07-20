@@ -25,6 +25,7 @@ struct DetailLoadingView: View {
 struct DetailView: View {
     
     @StateObject private var vm: DetailViewModel
+    @State private var showFullDescription: Bool = false
     private let columns: [GridItem] = [
         GridItem(.flexible()) ,
         GridItem(.flexible()) ,
@@ -50,12 +51,14 @@ struct DetailView: View {
                            !coinDescription.isEmpty {
                             VStack(alignment: .leading) {
                                 Text(coinDescription)
-                                    .lineLimit(3)
+                                    .lineLimit(showFullDescription ? nil : 3)
                                     .font(.callout)
                                     .foregroundColor(Color.theme.SecondaryText)
                                 
                                 Button(action: {
-                                    
+                                    withAnimation(.easeInOut) {
+                                        showFullDescription.toggle()
+                                    }
                                 }, label: {
                                     Text("Read more..")
                                         .font(.caption)

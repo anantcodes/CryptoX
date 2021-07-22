@@ -42,6 +42,7 @@
 		0EB38123269F01E500D3C3F6 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB38122269F01E500D3C3F6 /* HapticManager.swift */; };
 		0EBADE0A2687403C00CDEA56 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBADE092687403C00CDEA56 /* StatisticView.swift */; };
 		0EC641B926A94C600074227D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC641B826A94C600074227D /* LaunchScreen.storyboard */; };
+		0EC641BE26A94F8B0074227D /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC641BD26A94F8B0074227D /* LaunchView.swift */; };
 		0EC801972680A114000A2988 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC801962680A114000A2988 /* CoinDataService.swift */; };
 		0EC8019C2680B343000A2988 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8019B2680B343000A2988 /* NetworkingManager.swift */; };
 		0EC9BB8226A5A183005229CB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9BB8126A5A183005229CB /* ChartView.swift */; };
@@ -89,6 +90,7 @@
 		0EB38122269F01E500D3C3F6 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		0EBADE092687403C00CDEA56 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		0EC641B826A94C600074227D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EC641BD26A94F8B0074227D /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0EC801962680A114000A2988 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		0EC8019B2680B343000A2988 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		0EC9BB8126A5A183005229CB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				0EC641B826A94C600074227D /* LaunchScreen.storyboard */,
+				0EC641BD26A94F8B0074227D /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				0E8253CA2681C34A000C4073 /* CoinImageView.swift in Sources */,
 				0E9040C8267CED5A00C045D0 /* CryptoXApp.swift in Sources */,
 				0E54FB0226821FD000D50FD4 /* UIApplication.swift in Sources */,
+				0EC641BE26A94F8B0074227D /* LaunchView.swift in Sources */,
 				0E6507BA267DD4E800360DB9 /* CircleButtonView.swift in Sources */,
 				0E6507AD267DB74F00360DB9 /* Color.swift in Sources */,
 				0E2BDBEE26A02689008A8B2C /* DetailView.swift in Sources */,

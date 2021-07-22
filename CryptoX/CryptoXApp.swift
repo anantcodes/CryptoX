@@ -19,11 +19,18 @@ struct CryptoXApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                HomeView()
-                    .navigationBarHidden(true)
+            
+            ZStack {
+                NavigationView {
+                    HomeView()
+                        .navigationBarHidden(true)
+                }
+                .environmentObject(vm)
+                
+                LaunchView()
             }
-            .environmentObject(vm)
+            
+            
         }
     }
 }

@@ -11,6 +11,7 @@ import SwiftUI
 struct CryptoXApp: App {
     
     @StateObject private var vm = HomeViewModel()
+    @State  var showLaunchView: Bool = true
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
@@ -27,10 +28,14 @@ struct CryptoXApp: App {
                 }
                 .environmentObject(vm)
                 
-                LaunchView()
+                ZStack {
+                    if showLaunchView {
+                        LaunchView(showLaunchView: $showLaunchView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
             }
-            
-            
         }
     }
 }

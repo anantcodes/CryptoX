@@ -32,7 +32,6 @@
 		0E8253D42681E0C3000C4073 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8253D32681E0C3000C4073 /* LocalFileManager.swift */; };
 		0E8253D72681EB03000C4073 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8253D62681EB03000C4073 /* SearchBarView.swift */; };
 		0E9040C8267CED5A00C045D0 /* CryptoXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */; };
-		0E9040CA267CED5A00C045D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9040C9267CED5A00C045D0 /* ContentView.swift */; };
 		0E9040CC267CED5B00C045D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040CB267CED5B00C045D0 /* Assets.xcassets */; };
 		0E9040CF267CED5B00C045D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040CE267CED5B00C045D0 /* Preview Assets.xcassets */; };
 		0E9040D8267CF7F300C045D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E9040D7267CF7F300C045D0 /* README.md */; };
@@ -79,7 +78,6 @@
 		0E8253D62681EB03000C4073 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0E9040C4267CED5A00C045D0 /* CryptoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9040C7267CED5A00C045D0 /* CryptoXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoXApp.swift; sourceTree = "<group>"; };
-		0E9040C9267CED5A00C045D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E9040CB267CED5B00C045D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E9040CE267CED5B00C045D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E9040D0267CED5B00C045D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 				0E820308267DF72700CA2BF8 /* Models */,
 				0E6507B0267DD25400360DB9 /* Core */,
 				0E6507AB267DB72300360DB9 /* Extensions */,
-				0E9040C9267CED5A00C045D0 /* ContentView.swift */,
 				0E9040CB267CED5B00C045D0 /* Assets.xcassets */,
 				0E9040D0267CED5B00C045D0 /* Info.plist */,
 				0E9040CD267CED5B00C045D0 /* Preview Content */,
@@ -407,7 +404,6 @@
 				0EC9BB8226A5A183005229CB /* ChartView.swift in Sources */,
 				0ED4D91A26904D6600F7794A /* XMarkButton.swift in Sources */,
 				0E814E1C267F808800B61D9C /* HomeViewModel.swift in Sources */,
-				0E9040CA267CED5A00C045D0 /* ContentView.swift in Sources */,
 				0E73B9D826A5D7CE00153075 /* Date.swift in Sources */,
 				0E8253D42681E0C3000C4073 /* LocalFileManager.swift in Sources */,
 				0E67040526A9EF9D00EC4A00 /* HomeStatsView.swift in Sources */,

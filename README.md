@@ -21,3 +21,16 @@ This is an iOS application that helps the user to track his/her investments and 
 - [x] Codable type 
 - [x] File Manager
 - [x] Networking Layer
+
+### Screenshots
+
+<img width="1100" alt="Screenshot 2021-07-27 at 12 27 00 PM" src="https://user-images.githubusercontent.com/66024577/127138930-b09a592f-3eae-45e1-834c-a6278d006bd7.png">
+
+<img width="1100" alt="Screenshot 2021-07-27 at 12 31 18 PM" src="https://user-images.githubusercontent.com/66024577/127138952-d48bb7ac-2f9d-4439-b21c-1d97152d5f98.png">
+
+
+## Maintainer
+
+[Anant Kanchan](https://github.com/anantcodes)
+
+

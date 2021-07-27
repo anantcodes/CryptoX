@@ -2,6 +2,8 @@
 
 Technology has changed the way people work, communicate, shop, pay and collaborate. One such transformation was the origin of cryptocurrency.
 
+![image](https://user-images.githubusercontent.com/66024577/127145857-aee472c8-89f1-441f-9435-75e75c8402d0.png)
+
 A cryptocurrency is a digital or virtual currency that is meant to be a medium of exchange. It is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology. A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation.
 
 This is an iOS application that helps the user to track his/her investments and maintain portfolios.

@@ -34,3 +34,6 @@ This is an iOS application that helps the user to track his/her investments and 
 [Anant Kanchan](https://github.com/anantcodes)
 
 
+## License
+
+[MIT License](https://github.com/anantcodes/CryptoX/blob/master/LICENSE)

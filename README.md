@@ -24,6 +24,10 @@ This is an iOS application that helps the user to track his/her investments and 
 - [x] File Manager
 - [x] Networking Layer
 
+## Blog
+
+[CryptoX-My take on Cryptocurrency](https://medium.com/@anant4265/cryptox-my-take-on-cryptocurrency-2207fe354932)
+
 ### Screenshots
 
 <img width="1100" alt="Screenshot 2021-07-27 at 12 27 00 PM" src="https://user-images.githubusercontent.com/66024577/127138930-b09a592f-3eae-45e1-834c-a6278d006bd7.png">

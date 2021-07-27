@@ -13,3 +13,11 @@ This is an iOS application that helps the user to track his/her investments and 
 - [x] Realtime searching, sorting and filtering of coins
 - [x] Dark mode adaption
 - [x] Optimised for enhanced runtime experience
+
+### Technical applications:
+- [x] MVVM(Model-View-ViewModel) structural pattern
+- [x] SwiftUI framework
+- [x] Core Data
+- [x] Codable type 
+- [x] File Manager
+- [x] Networking Layer

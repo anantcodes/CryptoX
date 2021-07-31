@@ -26,7 +26,7 @@ This is an iOS application that helps the user to track his/her investments and 
 
 ## Blog
 
-[CryptoX-My take on Cryptocurrency](https://medium.com/@anant4265/cryptox-my-take-on-cryptocurrency-2207fe354932)
+Do checkout this blog : [CryptoX-My take on Cryptocurrency](https://medium.com/@anant4265/cryptox-my-take-on-cryptocurrency-2207fe354932)✍🏻
 
 ### Screenshots
 
